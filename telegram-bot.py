@@ -10,6 +10,7 @@ if updates:
     for update in updates:
         last = update['update_id']
         print update
+        bot.sendMessage(chat_id=update.message.chat_id,text="ok")
     last += 1
     bot.getUpdates(offset=last)
 
